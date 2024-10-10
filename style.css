@@ -171,7 +171,7 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.685),rgba(0, 0, 0, 0.63)),url(../images/there7.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.685),rgba(0, 0, 0, 0.63)),url(/there7.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -181,15 +181,17 @@ section{
 }
 
 .home .content h3{
-    font-size: 7rem;
+    font-size: 6rem;
     text-transform: uppercase;
     color:#fff;
+    text-shadow: 2px 5px #805f41a9;
    
 }
 
 .content span {
     color: rgb(196, 121, 51);
     text-transform: uppercase;
+    text-shadow: 2px 4px  #020202b7;
 }
 
 .home .content p{
@@ -206,6 +208,7 @@ section{
     font-weight: bold;
     line-height: 1.8;
     letter-spacing: 3px;
+    text-shadow:  2px 4px  #020202e1;
 }
 
 
