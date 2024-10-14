@@ -127,6 +127,7 @@ section{
 
 #menu-btn{
     display: none;
+    background-color: #13131a;
 }
 
 .header .search-form{
@@ -181,17 +182,15 @@ section{
 }
 
 .home .content h3{
-    font-size: 6rem;
+    font-size: 7rem;
     text-transform: uppercase;
     color:#fff;
-    text-shadow: 2px 5px #805f41a9;
    
 }
 
 .content span {
     color: rgb(196, 121, 51);
     text-transform: uppercase;
-    text-shadow: 2px 4px  #020202b7;
 }
 
 .home .content p{
@@ -208,7 +207,6 @@ section{
     font-weight: bold;
     line-height: 1.8;
     letter-spacing: 3px;
-    text-shadow:  2px 4px  #020202e1;
 }
 
 
@@ -245,14 +243,16 @@ section{
 
     #menu-btn{
         display: inline-block;
+
     }
 
     .header .navbar{
         position: absolute;
         top:100%; right: -100%;
-        background: #fff;
+        background: #00000096;
         width: 30rem;
         height: calc(100vh - 9.5rem);
+        
     }
 
     .header .navbar.active{
@@ -265,6 +265,7 @@ section{
         margin:1.5rem;
         padding:.5rem;
         font-size: 2rem;
+        color: #fff;
     }
 
     .header .search-form{
