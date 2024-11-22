@@ -54,7 +54,7 @@ section{
 }
 
 .heading span{
-    color: var(--main-color);
+    color: rgb(185, 126, 49);
     text-transform: uppercase;
 }
 
@@ -90,16 +90,19 @@ section{
 }
 
 .header .logo{
+    font-family: 'League Spartan';
     font-size: 3rem;
     font-weight: bold;
     color: #fff;
     letter-spacing: 3px;
     margin-top: 13px;
-        
+    text-transform: lowercase;
 }
 
 .logo span {
     color: rgb(185, 126, 49);
+    text-transform: lowercase;
+    font-family: 'League Spartan';
 }
 
 .header .navbar a{
@@ -185,7 +188,9 @@ section{
     font-size: 7rem;
     text-transform: uppercase;
     color:#fff;
-   
+    font-family: 'bfc', Helvetica, Arial, Lucida, sans-serif;
+    letter-spacing: 0.05em;
+
 }
 
 .content span {
@@ -195,7 +200,7 @@ section{
 
 .home .content p{
     font-size: 3rem;
-    font-weight: lighter;
+    font-weight: 300;
     line-height: 1.8;
     padding:1rem 0;
     color:#eee;
@@ -203,7 +208,7 @@ section{
 
 .content p span{
     color: rgb(196, 121, 51);
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-weight: bold;
     line-height: 1.8;
     letter-spacing: 3px;
@@ -248,18 +253,26 @@ section{
 }
 
 .menu .box-container .box{
-    padding:5rem;
+    padding: 4.5rem;
     text-align: center;
     border:var(--border);    
 }
 
 .menu .box-container .box img{
-    height: 10rem;
+    height: 15rem;
 }
 
 .menu .box-container .box h3{
     color: #fff;
-    font-size: 2rem;
+    font-size: 3rem;
+    padding:1rem 0;
+}
+
+.menu .box-container .box h4{
+    font-weight: lighter;
+    text-transform: lowercase;
+    color: #fff;
+    font-size: 1.5rem;
     padding:1rem 0;
 }
 
@@ -276,12 +289,186 @@ section{
 }
 
 .menu .box-container .box:hover{
-    background:#fff;
+    background:#fdfcfc;
 }
 
 .menu .box-container .box:hover > *{
     color:var(--black);
 }
+
+
+
+/*-----------menu---------*/
+
+.heading p {
+    color: white;
+    line-height: 30px;
+    font-size: 18px;
+    opacity: 0.7;
+  }
+  
+  .container {
+    max-width: 90%;
+    margin: auto;
+  }
+  
+  
+  .heading h5 {
+    color: #4D8B55;
+    font-size: 18px;
+  }
+  
+  .menu {
+    text-align: center;
+  }
+  
+  .menu h3 {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* Container for the slider */
+  .slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0; /* Add some padding for a cleaner look */
+}
+
+/* Slider itself */
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth sliding transition */
+    will-change: transform; /* Improves animation performance */
+}
+
+/* Item styling */
+.item {
+    min-width: 250px; /* Width of each item */
+    margin-right: 20px; /* Space between items */
+    background-color: rgba(105, 68, 46, 0.76); /* Styled background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(73, 73, 73, 0.616); /* Slight shadow for depth */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.item:hover {
+    transform: scale(1.05); /* Slight zoom-in on hover */
+    box-shadow: 0 6px 12px rgba(73, 73, 73, 0.8); /* Enhanced shadow */
+}
+
+/* Image styling */
+.img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Smooth image hover effect */
+}
+
+.item:hover .img img {
+    transform: scale(1.1); /* Zoom effect on image hover */
+}
+
+/* Text styling */
+.text {
+    padding: 15px;
+   
+}
+
+.text h3 {
+    font-size: 20px;
+    color: rgb(255, 238, 216);
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 14px;
+    color: #f3efeff8;
+    line-height: 1.5;
+}
+
+/* Price styling */
+.item .price {
+    color: #f3efeff8;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.item .price span {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+    margin-left: 5px;
+    color: #e74c3c; /* Sale price in red */
+}
+
+/* Arrow buttons */
+.arrow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+    border-radius: 50%;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.arrow-button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+.arrow-button.prev {
+    left: 10px;
+}
+
+.arrow-button.next {
+    right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .item {
+        min-width: 200px; /* Smaller item width for mobile */
+        margin-right: 10px;
+    }
+
+    .arrow-button {
+        font-size: 24px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .item {
+        min-width: 180px;
+    }
+
+    .text h3 {
+        font-size: 18px;
+    }
+
+    .text p {
+        font-size: 12px;
+    }
+
+    .item .price {
+        font-size: 1.2rem;
+    }
+}
+
+
+  /*-----------menu---------*/
 
 
 .products .box-container{
@@ -483,59 +670,105 @@ section{
     padding:1rem 0;
 }
 
-.footer{
-    background:var(--black);
-    text-align: center;
+
+  /*-----------image---------*/
+
+/*-----------footer---------*/
+footer {
+    background-image: url("images/IMG_1490.PNG");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    color: white;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+  
+  .footerbg {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  footer .content {
+    padding: 80px;
+  }
+  
+  footer h3 {
+    color: #4D8B55;
+    font-size: 2.5rem;
+    font-weight: 800;
+    border-bottom: 3px solid #4D8B55;
+    margin-bottom: 50px;
+  }
+  
+  footer p {
+    margin-top: 20px;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 1.6rem
+  }
+  
+  footer .icon i {
+    color: #4D8B55;
+    margin-right: 30px;
+  }
+  
+  .fab {
+    font-size: 20px;
 }
 
-.footer .share{
-    padding:1rem 0;
-}
-
-.footer .share a{
-    height: 5rem;
-    width: 5rem;
-    line-height: 5rem;
-    font-size: 2rem;
-    color:#fff;
-    border:var(--border);
-    margin:.3rem;
-    border-radius: 50%;
-}
-
-.footer .share a:hover{
-    background-color: var(--main-color);
-}
-
-.footer .links{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding:2rem 0;
-    gap:1rem;
-}
-
-.footer .links a{
-    padding:.7rem 2rem;
-    color:#fff;
-    border:var(--border);
-    font-size: 2rem;
-}
-
-.footer .links a:hover{
-    background:var(--main-color);
-}
-
-.footer .credit{
-    font-size: 2rem;
-    color:#fff;
-    font-weight: lighter;
-    padding:1.5rem;
-}
-
-.footer .credit span{
-    color:var(--main-color);
-}
+  footer .address .item {
+    margin-bottom: 30px;
+  }
+  
+  footer .address i {
+    font-size: 25px;
+    margin-right: 20px;
+  }
+  
+  footer .address h5 {
+    color: #4D8B55;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  
+  footer .input {
+    background: white;
+    border-radius: 50px;
+    margin-bottom: 20px;
+  }
+  
+  footer input {
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    padding: 20px;
+  }
+  
+  footer .submit {
+    background: #4D8B55;
+    padding: 30px 60px;
+    color: white;
+    font-weight: 800;
+    border-radius: 50px;
+  }
+  
+  .legal {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    
+  }
+  
+  .legal p {
+    margin: 0;
+    padding: 30px 0px 30px 80px;
+  }
+  
+  /*-----------footer---------*/
 
 
 
