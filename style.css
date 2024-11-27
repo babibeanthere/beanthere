@@ -583,7 +583,6 @@ section{
 
 .contact .row .map{
     flex:1 1 45rem;
-    height: 78vh;
     width: 100%;
     object-fit: cover;
 }
@@ -607,7 +606,6 @@ section{
     margin-bottom: 2rem;
     background:var(--bg);
     border:var(--border);
-    border-radius: 30px;
 }
 
 .contact .row form .inputBox span{
@@ -624,7 +622,6 @@ section{
     text-transform: none;
     background:none;
 }
-
 
 
 /*-----------footer---------*/
