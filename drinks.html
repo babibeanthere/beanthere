@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+   
+
+    <title> Bean There. Coffee </title>
+</head>
+<body>
+    
+
+<header class="header">
+
+    <a href="#" class="logo">
+        <a href="index.html" class="logo">bean <span>there.</span></a>
+    </a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <div class="dropdown">
+            <a href="#menu" class="dropdown-btn">Menu</a>
+            <div class="dropdown-content">
+                <a href="drinks.html">Drinks</a>
+                <a href="snacks.html">Snacks</a>
+            </div>
+        </div>
+        
+    </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdownBtn = document.querySelector('.dropdown-btn');
+            const dropdown = document.querySelector('.dropdown');
+
+            dropdownBtn.addEventListener('click', function() {
+                dropdown.classList.toggle('active');
+            });
+
+            document.addEventListener('click', function(event) {
+                if (!dropdown.contains(event.target)) {
+                    dropdown.classList.remove('active');
+                }
+            });
+        });
+    </script>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+</header>
+
+
+    <section class="menuu" id="menuu">
+
+        <h1 class="heading"> coffee <span>selections</span> </h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <img src="images/mu2.jpg" alt="">
+                <h3>Sakura Latte</h3>
+                <h4>Florance esssence of cherry blossom flavors perfectly crafted.</h4>
+                <div class="price">₱140.00<span>₱155.00</span></div>
+            </div>
+    
+            <div class="box">
+                <img src="images/mu1.jpg" alt="">
+                <h3>Caramel Macchiato</h3>
+                <h4>the famous espresso drink blended with caramel and vanilla.</h4>
+                <div class="price">₱140.00 <span>₱155.00</span></div>
+            </div>
+    
+            <div class="box">
+                <img src="images/mu3.jpg" alt="">
+                <h3>Dirty Matcha</h3>
+                <h4>a blend of matcha and espresso, and a splash of vanilla.</h4>
+                <div class="price">₱145.00<span>₱158.00</span></div>
+            </div>
+    
+            <div class="box">
+                <img src="images/mu4.jpg" alt="">
+                <h3>Coconut Matcha</h3>
+                <h4>creamy coconut meets vibrant matcha for a refreshing and delicious treat.</h4>
+                <div class="price">₱155.00<span>₱160.00</span></div>
+            </div>
+    
+            <div class="box">
+                <img src="images/mu5.jpg" alt="">
+                <h3>Ichigo Matcha</h3>
+                <h4>dive into a delightful blend of vibrant matcha and sweet strawberry flavors.</h4>
+                <div class="price">₱155.00<span>₱160.00</span></div>
+            </div>
+    
+            <div class="box">
+                <img src="images/mu6.jpg" alt="">
+                <h3>Vanilla Coconut Latte</h3>
+                <h4>a tropical twist with creamy coconut milk rich espresso, and a splash of vanilla.</h4>
+                <div class="price">₱155.00<span>₱160.00</span></div>
+            </div>
+    
+            <div class="box">
+                <img src="images/mu7.jpg" alt="">
+                <h3>Mocha</h3>
+                <h4>espresso + milk + chocolate, and a splash of vanilla.</h4>
+                <div class="price">₱150.00 <span>₱159.00</span></div>
+            </div>
+    
+            <div class="box">
+                <img src="images/mu8.jpg" alt="">
+                <h3>Espresso</h3>
+                <h4>freshly roasted seasonal specialty beans fdor espresso- originating from Brazil</h4>
+                <div class="price">₱110.00 <span>₱115.00</span></div>
+            </div>
+    
+            <div class="box">
+                <img src="images/mu9.jpg" alt="">
+                <h3>Matcha Latte</h3>
+                <h4>bean there's famous best-selling matcha drink since the beginning</h4>
+                <div class="price">₱145.00 <span>₱150.00</span></div>
+            </div>
+    
+        </div>
+    
+    </section>
+    
+    <!-- menu secction ends -->
+
+    <footer>
+        <p>&copy; Castillon | Baldoza | Villano | Dorado </p>
+        <p>
+           <a href="index.html">Home</a> |
+           <a href="#about">AboutUs</a> |
+           <a href="#menu">Menu</a> |
+           <a href="#products">Products</a> |
+           <a href="#review">Review</a> |
+           <a href="#contact">Contact Us</a>
+        </p>
+    </footer>
+
+
+</body>
+</html>

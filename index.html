@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="style.css">
    
 
-    <title> Bean There. Coffee </title>
+    <title> bean there. coffee </title>
+    <link rel="icon" href="images/IMG_1491 (1).JPG" type="image/jpg">
 </head>
 <body>
     
@@ -22,7 +23,7 @@
 
     <nav class="navbar">
         <a href="index.html">home</a>
-        <a href="#about">about</a>
+        <a href="#about">aboutUs</a>
         <a href="#menu">menu</a>
         <a href="#products">products</a>
         <a href="#review">review</a>
@@ -30,13 +31,7 @@
     </nav>
 
     <div class="icons">
-        <div class="fas fa-search" id="search-btn"></div>
         <div class="fas fa-bars" id="menu-btn"></div>
-    </div>
-
-    <div class="search-form">
-        <input type="search" id="search-box" placeholder="search here...">
-        <label for="search-box" class="fas fa-search"></label>
     </div>
     
 
@@ -45,9 +40,9 @@
 <section class="home" id="home">
 
     <div class="content">
-        <h3>Every Sip is an <span>Experience</span></h3>
-        <p>Start your day right with a cup of perfection at - <span>bean  there.</span></p>
-        <a href="#menu" class="btn">get yours now</a>
+        <h3>Every sip is an <span>Experience</span></h3>
+        <p> Start your day off right with a <span>bean</span></p>
+        
     </div>
 
 </section>
@@ -58,7 +53,7 @@
 
     <h1 class="heading"> <span>about</span> us </h1>
 
-    <div class="row">
+    <div class="row zoomed-out">
 
         <div class="image">
             <img src="images/try-bg.png" alt="">
@@ -67,7 +62,7 @@
         <div class="content">
             <h3>From bean to cup, we’ve got you covered!</h3>
             <p>Bean has two locations: one in Roxas City and one in Iloilo City. the store owned by a young entrepreneur named Martin Fajardo II. </p>
-            <h3>mission</h3>
+            <h3>mission</h3>   
             <p>To serve premium coffee made from the finest beans, creating a welcoming environment where every cup brings people together with quality and passion.</p>
             <h3>vision</h3>
             <p>To be the go-to destination for coffee lovers, offering an exceptional experience while promoting sustainability and community connection.</p>
@@ -84,174 +79,24 @@
 <!-- menu section starts  -->
 
 <section class="menu" id="menu">
+    <h1 class="heading"><span>ME</span>NU</h1>
 
-    <h1 class="heading"> coffee <span>selections</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="images/mu2.jpg" alt="">
-            <h3>Sakura Latte</h3>
-            <h4>Florance esssence of cherry blossom flavors perfectly crafted.</h4>
-            <div class="price">140.00<span>155.00</span></div>
+    <div class="selection-container">
+        <!-- First Selection -->
+        <div class="selection-box1" onclick="window.location.href='drinks.html'">
+            <h2>Coffees and Drinks</h2>
+            <p>Explore our timeless coffee selections.</p>
         </div>
 
-        <div class="box">
-            <img src="images/mu1.jpg" alt="">
-            <h3>Caramel Macchiato</h3>
-            <h4>the famous espresso drink blended with caramel and vanilla.</h4>
-            <div class="price">140.00 <span>155.00</span></div>
+        <!-- Second Selection -->
+        <div class="selection-box2" onclick="window.location.href='snacks.html'">
+            <h2>Snacks</h2>
+            <p>Discover our unique and creative breads and pastries.</p>
         </div>
-
-        <div class="box">
-            <img src="images/mu3.jpg" alt="">
-            <h3>Dirty Matcha</h3>
-            <h4>a blend of matcha and espresso.</h4>
-            <div class="price">145.00<span>158.00</span></div>
-        </div>
-
-        <div class="box">
-            <img src="images/mu4.jpg" alt="">
-            <h3>Coconut Matcha</h3>
-            <h4>creamy coconut meets vibrant matcha for a refreshing and delicious treat.</h4>
-            <div class="price">155.00<span>160.00</span></div>
-        </div>
-
-        <div class="box">
-            <img src="images/mu5.jpg" alt="">
-            <h3>Ichigo Matcha</h3>
-            <h4>dive into a delightful blend of vibrant matcha and sweet strawberry flavors.</h4>
-            <div class="price">155.00<span>160.00</span></div>
-        </div>
-
-        <div class="box">
-            <img src="images/mu6.jpg" alt="">
-            <h3>Vanilla Coconut Latte</h3>
-            <h4>a tropical twist with creamy coconut milk rich espresso, and a splash of vanilla.</h4>
-            <div class="price">155.00<span>160.00</span></div>
-        </div>
-
-        <div class="box">
-            <img src="images/mu7.jpg" alt="">
-            <h3>Mocha</h3>
-            <h4>espresso + milk + chocolate</h4>
-            <div class="price">150.00 <span>159.00</span></div>
-        </div>
-
-        <div class="box">
-            <img src="images/mu8.jpg" alt="">
-            <h3>Espresso</h3>
-            <h4>freshly roasted seasonal specialty beans fdor espresso- originating from Brazil</h4>
-            <div class="price">110.00 <span>115.00</span></div>
-        </div>
-
-        <div class="box">
-            <img src="images/mu9.jpg" alt="">
-            <h3>Matcha Latte</h3>
-            <h4>bean there's famous best-selling matcha drink since the beginning</h4>
-            <div class="price">145.00 <span>150.00</span></div>
-        </div>
-
     </div>
-
 </section>
 
-<section>
-  <h1 class="heading">Bread and <span> Pastries</span></h1>
-
-  <div class="slider-container">
-    <div class="arrow-button prev">&#10094;</div> <!-- Previous Button -->
-    <div class="slider">
-        <div class="item">
-            <div class="img">
-                <img src="images/tasty1.jpg" alt="">
-            </div>
-            <div class="text">
-                <h3>Carrot Cake</h3>
-                <p>Sweet carrots, warm spice, luscious cream cheese frosting.</p>
-            </div>
-            <div class="price">₱ 210.00</div>
-        </div>
-        <div class="item">
-            <div class="img">
-                <img src="images/tasty2.jpg" alt="">
-            </div>
-            <div class="text">
-                <h3>Blueberry Cheesecake</h3>
-                <p>Creamy Cheesecake, fresh blueberries, buttery graham crust.</p>
-            </div>
-            <div class="price">₱ 210.00</div>
-        </div>
-        <div class="item">
-            <div class="img">
-                <img src="images/tasty3.jpg" alt="">
-            </div>
-            <div class="text">
-                <h3>Sandwich</h3>
-                <p>Ham & Cheese</p>
-            </div>
-            <div class="price">₱ 210.00</div>
-        </div>
-        <div class="item">
-            <div class="img">
-                <img src="images/tasty4.jpg" alt="">
-            </div>
-            <div class="text">
-                <h3>Sandwich</h3>
-                <p>Tuna</p>
-            </div>
-            <div class="price">₱ 210.00</div>
-        </div>
-
-        <div class="item">
-            <div class="img">
-                <img src="images/bread.jpg" alt="">
-            </div>
-            <div class="text">
-              <h3>Pain Au Chocolat </h3>
-              <p> Flaky pastry, rich chocolate, buttery aroma </p>
-            </div>
-            <div class="price">₱ 210.00</div>
-        </div>
-        <div class="item">
-            <div class="img">
-                <img src="images/bread1.jpg" alt="">
-            </div>
-            <div class="text">
-              <h3> Chocolate Kouign-Amman </h3>
-              <p> Buttery layers, rich chocolate, caramelized delight. </p>
-            </div>
-            <div class="price">₱ 210.00</div>
-        </div>
-        <div class="item">
-            <div class="img">
-                <img src="images/bread2.JPG" alt="">
-            </div>
-            <div class="text">
-              <h3> Caramelized Kouign-Amman </h3>
-              <p> Crispy, buttery layers with caramelized sweetness.</p>
-            </div>
-            <div class="price">₱ 210.00</div>
-        </div>
-        <div class="item">
-            <div class="img">
-                <img src="images/bread3.JPG" alt="">
-            </div>
-            <div class="text">
-              <h3> Croissant </h3>
-              <p> Buttery, flaky layers with a golden crust. </p>
-            </div>
-            <div class="price">₱ 210.00</div>
-        </div>
-
-    </div>
-    <div class="arrow-button next">&#10095;</div> <!-- Next Button -->
-</div>
-
-</section>
-<!-- menu section ends -->
-
-<!--products section starts-->
+<!-- menu secction ends -->
 
 <section class="products" id="products">
 
@@ -259,7 +104,7 @@
 
     <div class="box-container">
 
-        <div class="box">
+        <div class="box" data-product-id="1"> <!-- Add unique product ID -->
             <div class="icons">
                 <a href="#" class="fas fa-heart"></a>
                 <a href="#" class="fas fa-eye"></a>
@@ -276,12 +121,11 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <div class="price">₱ 150<span>₱ 500</span></div>
+                <div class="price">₱ 280<span>₱ 500</span></div>
             </div>
         </div>
-
-
-        <div class="box">
+        
+        <div class="box" data-product-id="2"> <!-- Add unique product ID -->
             <div class="icons">
                 <a href="#" class="fas fa-heart"></a>
                 <a href="#" class="fas fa-eye"></a>
@@ -289,7 +133,6 @@
             <div class="image">
                 <img src="images/IMG_1498.JPG" alt="">
             </div>
-
             <div class="content">
                 <h3>bean there tumbler</h3>
                 <div class="stars">
@@ -299,12 +142,11 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <div class="price">₱ 200<span>₱ 500</span></div>
+                <div class="price">₱ 350<span>₱ 600</span></div>
             </div>
-
         </div>
 
-        <div class="box">
+        <div class="box" data-product-id="3">
             <div class="icons">
                 <a href="#" class="fas fa-heart"></a>
                 <a href="#" class="fas fa-eye"></a>
@@ -322,169 +164,119 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                 </div>
-                <div class="price">₱ 200<span>₱ 500</span></div>
+                <div class="price">₱ 200<span>₱ 350</span></div>
             </div>
-
+        </div>
     </div>
 
 </section>
 
-<!-- review section starts  -->
+<script>
+    // Heart Icon Functionality
+    const heartIcons = document.querySelectorAll('.fa-heart');
+    heartIcons.forEach(icon => {
+        icon.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent default behavior (scrolling to top)
+            icon.classList.toggle('active'); // Toggle red color
+        });
+    });
 
-<section class="review" id="review">
+    // Eye Icon Functionality
+    const eyeIcons = document.querySelectorAll('.fa-eye');
+    const modal = document.createElement('div');
+    modal.classList.add('modal');
+    document.body.appendChild(modal);
 
-    <h1 class="heading"> customer's <span>review</span> </h1>
+    eyeIcons.forEach((icon, index) => {
+        icon.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent default behavior (scrolling to top)
+            const imageSrc = icon.closest('.box').querySelector('img').src; // Get image source
+            modal.innerHTML = `<img src="${imageSrc}" alt="Enlarged Image">`; // Set image in modal
+            modal.classList.add('active'); // Show modal
+        });
+    });
 
-    <div class="box-container">
+    // Close Modal on Click Outside
+    modal.addEventListener('click', () => {
+        modal.classList.remove('active'); // Hide modal
+    });
+</script>
 
-        <div class="box">
-            <h2>"A Hidden Gem!"</h2>
-            <p>"I absolutely love Bean There! From the moment I walk in, I'm greeted with the rich aroma of freshly brewed coffee and the warm, inviting atmosphere. Whether I'm grabbing a quick espresso or lounging with a cappuccino, it’s the perfect spot to relax, work, or catch up with friends. I can’t recommend this place enough – if you haven’t been, you’re missing out!"</p>
-            <img src="images/review1.jpg" class="user" alt="">
+<!-- Products section ends -->
+
+<section class="review-section" id="review">
+    <h1 class="heading"> Customer <span>Reviews</span> </h1>
+
+    <div class="review-container">
+        <div class="review-box">
+            <img src="images/review1.jpg" alt="Reviewer">
             <h3>Felmar Sion</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
+            <h2>"A Hidden Gem!"</h2>
+            <p>"I absolutely love Bean There! The coffee is amazing and the atmosphere is perfect for relaxing or working. Highly recommend!"</p> 
         </div>
-
-        <div class="box">
-            <h2>"My Go-To Coffee Spot!"</h2>
-            <p>"Bean There" has quickly become my favorite place to get coffee. I love how they customize drinks to your preferences, and their pastries are the perfect pairing with any coffee. It's cozy, welcoming, and the perfect place to unwind or meet up with friends. I can’t imagine my mornings without a visit here!</p>
-            <img src="images/review2.jpg" class="user" alt="">
+        <div class="review-box">
+            <img src="images/review2.jpg" alt="Reviewer">
             <h3>Vonn Villano</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
+            <h2>"My Go-To Coffee Spot!"</h2>
+            <p>"The best coffee shop in town. Friendly staff, delicious pastries, and a cozy environment. Can't ask for more!"</p>
         </div>
-
-        <div class="box">
-            <h2>"Exceptional Coffee and Service!"</h2>
-            <p>Bean There" is everything I want in a coffee shop – great coffee, relaxed atmosphere, and excellent customer service. I’m a regular, and every time I visit, the staff goes above and beyond to make sure I have an amazing experience. Whether you’re a coffee enthusiast or just looking for a place to chill, this is the spot!</p>
-            <img src="images/review3.jpg" class="user" alt="">
+        <div class="review-box">
+            <img src="images/review3.jpg" alt="Reviewer">
             <h3>John Adams</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
+            <h2>"Exceptional Service!"</h2>
+            <p>"Every visit feels special. The baristas remember my order and the coffee always tastes amazing."</p>
         </div>
-
     </div>
-
 </section>
 
-<!-- review section ends -->
-
-
-<!-- contact section starts  -->
-
-<section class="contact" id="contact">
-
-    <h1 class="heading"> <span>contact</span> us </h1>
-
-    <div class="row">
-
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.561945303579!2d122.75330539999997!3d11.5832286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a5f3ec970c4815%3A0x238d5081d260a6ac!2sBean%20There%20Coffee%20Roxas!5e0!3m2!1sen!2sph!4v1731337665036!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-        <form action="">
-            <h3>get in touch</h3>
-            <div class="inputBox">
-                <span class="fas fa-user"></span>
-                <input type="text" placeholder="name">
-            </div>
-            <div class="inputBox">
-                <span class="fas fa-envelope"></span>
-                <input type="email" placeholder="email">
-            </div>
-            <div class="inputBox">
-                <span class="fas fa-phone"></span>
-                <input type="number" placeholder="number">
-            </div>
-            <input type="submit" value="contact now" class="btn">
-        </form>
-
+<!-- Contact Form Section -->
+<section class="contact-section" id="contact">
+    <div class="contact-container">
+      <!-- Left Column: Contact Form -->
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="https://formspree.io/f/xjkkpeyo" method="POST" >
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+  
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+  
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+  
+                <button type="submit">Send Message</button>
+            </form>
+      </div>
+  
+      <!-- Right Column: Contact Info -->
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong></p>
+        <div class="location-buttons">
+            <button onclick="window.open('https://maps.app.goo.gl/L6FM3MtzTA2NoDx2A', '_blank')">Location 1: 72 Jalandoni St, Iloilo City Proper, Iloilo City, Iloilo</button>
+            <button onclick="window.open('https://maps.app.goo.gl/mkMhDRCQ2NEVz6nw7', '_blank')">Roxas City Plaza, HQM3+672, Arsobispo Street, Roxas City, Capiz</button>
+        </div> 
+        <p><i class="fas fa-phone"></i> <strong>Phone:</strong> 0946 860 0745 </p>
+        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> beantherecoffee8@gmail.com </p>
+        <p><i class="fab fa-facebook"></i> <strong>Facebook:</strong> <a href="https://www.facebook.com/share/1EFTj1vzJM/?mibextid=wwXIfr" target="_blank">facebook.com/beantherecoffee</a></p>
     </div>
-
+    </div>
 </section>
-
-<!-- contact section ends -->
-
-
-<!-- footer section starts  -->
 
 <footer>
-    <div class="footerbg">
-      <div class="content grid">
-        <div class="box">
-          <div class="logo">
-            <img src="images/" alt="">
-          </div>
-          <p>At Bean There, we’re passionate about more than just coffee – we’re all about creating a welcoming space where every cup brings comfort and joy. From our expertly brewed coffee to our signature blends, we take pride in serving quality drinks made with love. Whether you're grabbing a quick espresso, enjoying a cozy latte, or relaxing with friends, Bean There is the perfect place to unwind, connect, and savor the moments that matter. Visit us today and experience the warmth, one cup at a time.</p>
-          <div class="icon flex">
-            <a href="https://www.facebook.com/share/1An7kwGnbk/?mibextid=LQQJ4d" target="_blank">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://www.foodpanda.ph/restaurant/z3p1/bean-there-coffee-arsobispo-street" target="_blank">
-                <i class="fas fa-hamburger fa-2x"></i>
-            </a>
-            </a>
-            <a href="https://www.instagram.com/beantherecoffeeph/profilecard/?igsh=cTMwazMyaXZ5MG9p" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="mailto:beantherecoffee8@gmail.com">
-                <i class="fas fa-envelope fa-2x"></i> 
-            </a>
-           
-          </div>
-        </div>
+    <p>&copy; Castillon | Baldoza | Villano | Dorado </p>
+    <p>
+       <a href="index.html">Home</a> |
+       <a href="#about">AboutUs</a> |
+       <a href="#menu">Menu</a> |
+       <a href="#products">Products</a> |
+       <a href="#review">Review</a> |
+       <a href="#contact">Contact Us</a>
+    </p>
+</footer>
 
-        <div class="box">
-          <h3>Contact Info</h3>
-          <div class="address">
-            <div class="item flexx">
-              <div class="icon">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <div class="text">
-                <h5>Our Location:</h5>
-                <span>📍 Location 1. Arsobispo St. Roxas City Plaza </span>
-              </div>
-            </div>
-            <div class="item flexx">
-              <div class="icon">
-                <i class="fas fa-phone-alt"></i>
-              </div>
-              <div class="text">
-                <h5>Phone Number:</h5>
-                <span>+0946 860 0745</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-    </div>
-    <center>
-        <div class="legal"></div>
-            <p>Copyright (c) 2024 Copyright Holder All Rights Reserved.</p>
-          </div>
-     </center>
-   
-  </footer>
-
-
-<!-- footer section ends -->
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>

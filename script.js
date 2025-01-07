@@ -1,51 +1,27 @@
-// Select the navbar and search form elements
-let navbar = document.querySelector('.navbar');
-let searchForm = document.querySelector('.search-form');
+// menu-btn //
+document.addEventListener('DOMContentLoaded', function () {
+    const menuBtn = document.getElementById('menu-btn');
+    const navbar = document.querySelector('.navbar');
 
-// Menu button toggle functionality
-document.querySelector('#menu-btn').onclick = () => {
-    navbar.classList.toggle('active');       
-    searchForm.classList.remove('active');   
-};
+    // Toggle the navbar visibility when the menu button is clicked
+    menuBtn.addEventListener('click', function () {
+        navbar.classList.toggle('active');
+    });
 
-// Search button toggle functionality
-document.querySelector('#search-btn').onclick = () => 
-    searchForm.classList.toggle('active');  
-    navbar.classList.remove('active');      
+    // Close the navbar when clicking outside of it
+    document.addEventListener('click', function (event) {
+        if (!navbar.contains(event.target) && !menuBtn.contains(event.target)) {
+            navbar.classList.remove('active');
+        }
+    });
 
-// Remove both menus when scrolling
-window.onscroll = () => {
-    navbar.classList.remove('active');
-    searchForm.classList.remove('active');
-};
-
-
-// Get the slider container and its child elements
-const slider = document.querySelector('.slider');
-const items = document.querySelectorAll('.item');
-let currentIndex = 0;
-
-// Function to slide the items
-function slide(direction) {
-    const totalItems = items.length;
-    
-    // Update currentIndex based on direction
-    if (direction === 'next') {
-        currentIndex = (currentIndex + 1) % totalItems;
-    } else if (direction === 'prev') {
-        currentIndex = (currentIndex - 1 + totalItems) % totalItems;
-    }
-
-    // Adjust the position of the slider to show the correct item
-    slider.style.transform = `translateX(-${currentIndex * (items[0].offsetWidth + 20)}px)`;
-}
-
-// Add event listeners for the buttons
-document.querySelector('.arrow-button.next').addEventListener('click', () => slide('next'));
-document.querySelector('.arrow-button.prev').addEventListener('click', () => slide('prev'));
-
-
-// For Contact Form //
+    // Handle window resize to ensure the navbar is hidden on larger screens
+    window.addEventListener('resize', function () {
+        if (window.innerWidth > 768) {
+            navbar.classList.remove('active');
+        }
+    });
+});
 
 // Wait for the DOM to fully load before attaching the event
 document.addEventListener("DOMContentLoaded", function() {
@@ -87,3 +63,58 @@ document.addEventListener("DOMContentLoaded", function() {
         form.reset();
     });
 });
+
+// products //
+
+// Fetch the JSON data
+fetch('products.json')
+  .then(response => response.json())
+  .then(data => {
+    // Access the data here
+    console.log(data);
+
+    // Create a HTML element to display the data
+    const productContainer = document.getElementById('product-container');
+
+    // Loop through the data and create HTML elements for each product
+    data.forEach(product => {
+      const productHTML = `
+        <div class="product">
+          <h2>${product.name}</h2>
+          <img src="${product.image}" alt="${product.name}">
+          <p>Price: ${product.price}</p>
+          <p>Original Price: ${product.originalPrice}</p>
+          <p>Description: ${product.description}</p>
+          <p>Stars: ${product.stars}</p>
+        </div>
+      `;
+
+      // Append the product HTML to the product container
+      productContainer.innerHTML += productHTML;
+    });
+  })
+  .catch(error => console.error('Error:', error));
+
+// reviews slideshow //
+
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
+
+function showSlide(index) {
+    slides.forEach (slide => slide.classList.remove('active'));
+    slides[index].classList.add('active');
+}
+
+document.querySelector('.prev-btn').addEventListener('click', () => {
+    currentSlide = (currentSlide > 0) ? currentSlide - 1 : totalSlides - 1;
+    showSlide(currentSlide);
+});
+
+document.querySelector('.next-btn').addEventListener('click', () => {
+    currentSlide = (currentSlide < totalSlides - 1) ? currentSlide + 1 : 0;
+    showSlide(currentSlide);
+});
+
+// Initialize the first slide
+showSlide(currentSlide);
