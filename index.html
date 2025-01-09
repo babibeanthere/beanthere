@@ -26,7 +26,7 @@
         <a href="#about">aboutUs</a>
         <a href="#menu">menu</a>
         <a href="#products">products</a>
-        <a href="#review">review</a>
+        <a href="#gallery">gallery</a>
         <a href="#contact">contact</a>
     </nav>
 
@@ -51,7 +51,7 @@
 
 <section class="about" id="about">
 
-    <h1 class="heading"> <span>about</span> us </h1>
+    <h1 class="heading">about us </h1>
 
     <div class="row zoomed-out">
 
@@ -66,7 +66,7 @@
             <p>To serve premium coffee made from the finest beans, creating a welcoming environment where every cup brings people together with quality and passion.</p>
             <h3>vision</h3>
             <p>To be the go-to destination for coffee lovers, offering an exceptional experience while promoting sustainability and community connection.</p>
-            <p>Join us on this journey toward coffee excellence, where every sip embodies our passion for perfection.</p>
+            <p>Join us on this journey toward coffee excellence, where every sip embodies our passion for perfection. At Bean There, we’re passionate about more than just coffee – we’re all about creating a welcoming space where every cup brings comfort and joy. From our expertly brewed coffee to our signature blends, we take pride in serving quality drinks made with love. Whether you're grabbing a quick espresso, enjoying a cozy latte, or relaxing with friends, Bean There is the perfect place to unwind, connect, and savor the moments that matter. Visit us today and experience the warmth, one cup at a time.</p>
             
         </div>
 
@@ -79,7 +79,7 @@
 <!-- menu section starts  -->
 
 <section class="menu" id="menu">
-    <h1 class="heading"><span>ME</span>NU</h1>
+    <h1 class="heading">MENU</h1>
 
     <div class="selection-container">
         <!-- First Selection -->
@@ -100,13 +100,12 @@
 
 <section class="products" id="products">
 
-    <h1 class="heading"> our <span>products</span> </h1>
+    <h1 class="heading"> our products</h1>
 
     <div class="box-container">
 
         <div class="box" data-product-id="1"> <!-- Add unique product ID -->
             <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
                 <a href="#" class="fas fa-eye"></a>
             </div>
             <div class="image">
@@ -114,20 +113,13 @@
             </div>
             <div class="content">
                 <h3>bean there umbrella</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
+                
                 <div class="price">₱ 280<span>₱ 500</span></div>
             </div>
         </div>
         
         <div class="box" data-product-id="2"> <!-- Add unique product ID -->
             <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
                 <a href="#" class="fas fa-eye"></a>
             </div>
             <div class="image">
@@ -135,20 +127,12 @@
             </div>
             <div class="content">
                 <h3>bean there tumbler</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
                 <div class="price">₱ 350<span>₱ 600</span></div>
             </div>
         </div>
 
         <div class="box" data-product-id="3">
             <div class="icons">
-                <a href="#" class="fas fa-heart"></a>
                 <a href="#" class="fas fa-eye"></a>
             </div>
             <div class="image">
@@ -157,16 +141,24 @@
             
             <div class="content">
                 <h3>bean there tote bag</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
                 <div class="price">₱ 200<span>₱ 350</span></div>
             </div>
         </div>
+
+        <div class="box" data-product-id="3">
+            <div class="icons">
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/product.jpg" alt="">
+            </div>
+            
+            <div class="content">
+                <h3>bean there tote bag</h3>
+                <div class="price">₱ 200<span>₱ 350</span></div>
+            </div>
+        </div>
+
     </div>
 
 </section>
@@ -176,8 +168,8 @@
     const heartIcons = document.querySelectorAll('.fa-heart');
     heartIcons.forEach(icon => {
         icon.addEventListener('click', (event) => {
-            event.preventDefault(); // Prevent default behavior (scrolling to top)
-            icon.classList.toggle('active'); // Toggle red color
+            event.preventDefault(); 
+            icon.classList.toggle('active'); 
         });
     });
 
@@ -204,28 +196,39 @@
 
 <!-- Products section ends -->
 
-<section class="review-section" id="review">
-    <h1 class="heading"> Customer <span>Reviews</span> </h1>
-
-    <div class="review-container">
-        <div class="review-box">
-            <img src="images/review1.jpg" alt="Reviewer">
-            <h3>Felmar Sion</h3>
-            <h2>"A Hidden Gem!"</h2>
-            <p>"I absolutely love Bean There! The coffee is amazing and the atmosphere is perfect for relaxing or working. Highly recommend!"</p> 
-        </div>
-        <div class="review-box">
-            <img src="images/review2.jpg" alt="Reviewer">
-            <h3>Vonn Villano</h3>
-            <h2>"My Go-To Coffee Spot!"</h2>
-            <p>"The best coffee shop in town. Friendly staff, delicious pastries, and a cozy environment. Can't ask for more!"</p>
-        </div>
-        <div class="review-box">
-            <img src="images/review3.jpg" alt="Reviewer">
-            <h3>John Adams</h3>
-            <h2>"Exceptional Service!"</h2>
-            <p>"Every visit feels special. The baristas remember my order and the coffee always tastes amazing."</p>
-        </div>
+<section class="image-gallery" id="gallery">
+    <h1 class="heading"> bean there. gallery</h1>
+    <div class="gallery-container">
+      <div class="gallery-item">
+        <img src="images/gallery.jpg" alt="Gallery Image 1">
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery1.jpg" alt="Gallery Image 2">
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery2.jpg" alt="Gallery Image 3">
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery3.jpg" alt="Gallery Image 4">
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery4.jpg" alt="Gallery Image 5">
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery5.jpg" alt="Gallery Image 6">
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery6.jpg" alt="Gallery Image 7">
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery7.jpg" alt="Gallery Image 8">
+      </div>
+      <div class="gallery-item">
+        <img src="images/gallery8.jpg" alt="Gallery Image 9">
+      </div>
+      <div class="gallery-item">
+        <img src="images/roxas.jpg" alt="Gallery Image 10">
+      </div>
     </div>
 </section>
 
@@ -265,13 +268,13 @@
 </section>
 
 <footer>
-    <p>&copy; Castillon | Baldoza | Villano | Dorado </p>
+    <p>&copy; Castillon | Baldoza | Villano | Dorado  2025 </p>
     <p>
        <a href="index.html">Home</a> |
        <a href="#about">AboutUs</a> |
        <a href="#menu">Menu</a> |
        <a href="#products">Products</a> |
-       <a href="#review">Review</a> |
+       <a href="#gallery">gallery</a> |
        <a href="#contact">Contact Us</a>
     </p>
 </footer>

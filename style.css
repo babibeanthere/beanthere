@@ -4,7 +4,7 @@
 :root{
     --main-color:#d3ad7f;
     --black:rgba(145, 96, 64, 0.973);
-    --bg: linear-gradient( 88.6deg,  rgb(10, 10, 10) 25%, rgba(26, 11, 1, 0.973) 100.4% );
+    --bg: linear-gradient( 88.6deg,  rgba(26, 11, 1, 0.973) 25%, rgba(71, 30, 2, 0.973) 100.4% );
     --border:.1rem solid rgba(255,255,255,.3);
 }
 
@@ -54,11 +54,6 @@ section{
     font-size: 5rem;
     padding-top: 5rem;
     
-}
-
-.heading span{
-    color: rgb(185, 126, 49);
-    text-transform: uppercase;
 }
 
 .btn{
@@ -170,7 +165,7 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.685),rgba(0, 0, 0, 0.63)),url(/images/IMG_6450.JPG) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.685),rgba(0, 0, 0, 0.63)),url(/images/IMG_6451.JPG) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -250,8 +245,12 @@ section{
         display: block;
         margin:1.5rem;
         padding:.5rem;
+
         font-size: 2rem;
         color: #fff;
+    }
+    .header .logo{
+        padding-right: 30%;
     }
 
     .header .search-form{
@@ -260,7 +259,10 @@ section{
     }
 
     .home{
-        background-position: left;
+        background: linear-gradient(rgba(0, 0, 0, 0.685),rgba(0, 0, 0, 0.63)),url(/images/draft2.JPG) no-repeat;
+    background-size: cover;
+    background-position: center;
+        background-position: center;
         justify-content: center;
         text-align: center;
     }
@@ -313,8 +315,6 @@ section{
     transition: transform 0.3s ease; 
 }
 
-
-
 .about .row.zoomed-out {
     transform: scale(0.9); 
 }
@@ -348,6 +348,7 @@ section{
     color: #f3efef;
     padding: 1rem 0;
     line-height: 1.6;
+    text-align: justify;
 }
 
 /* responsiveness for about  */
@@ -422,9 +423,7 @@ section{
 /* menu section */
 
 .menu {
-    background: linear-gradient(rgba(0, 0, 0, 0.685),rgba(0, 0, 0, 0.63)),url(/images/draft.JPG) no-repeat; 
-    background-size: cover;
-    background-position: center;
+    
     backdrop-filter: blur(12px); 
     border-radius: 15px;
     box-shadow: 0 25px 30px rgba(0, 0, 0, 0.973); 
@@ -1254,7 +1253,8 @@ section{
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
     padding-top: 3rem;
-    margin-left: 15%;
+    
+    
 }
 
 /* Individual Product Box Styling */
@@ -1322,6 +1322,7 @@ section{
 .products .box-container .box .content .price {
     color: #fff;
     font-size: 2.5rem;
+    padding-top: 1rem;
 }
 
 .products .box-container .box .content .price span {
@@ -1464,171 +1465,94 @@ section{
     }
 }
 
-/* review */
-.review-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.63)), url(/images/draft.JPG) no-repeat;
-    background-size: cover;
-    background-position: center;
-    backdrop-filter: blur(12px);
+/* Glass Effect for Image Gallery */
+.image-gallery {
+    padding: 50px 20px;
+    text-align: center;
+    background: rgba(19, 18, 18, 0.438); /* Transparent background for the glass effect */
+    backdrop-filter: blur(12px); /* Blur effect for the glass */
     border-radius: 15px;
-    box-shadow: 0 25px 30px rgba(0, 0, 0, 0.973);
-    padding: 4rem;
-    margin: 2rem auto;
-    width: 100%; 
+    box-shadow: 0 25px 30px rgba(0, 0, 0, 0.973); /* Subtle shadow for depth */
 }
-
-.review-section .heading {
-    text-align: center;
-    color: #fff;
+  
+  .image-gallery .gallery-heading {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
     text-transform: uppercase;
-    padding-bottom: 6rem;
-    font-size: 5rem;
-    padding-top: 5rem;
-}
+    color: #fff; /* White text for contrast on the glass background */
+  }
+  
+  .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Reduce gap between images */
+    justify-content: center;
+  }
 
-.review-section .heading span {
-    color: rgb(185, 126, 49);
-    text-transform: uppercase;
-}
-
-.review-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-}
-
-.review-box {
-    padding: 5rem;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
+  .image-gallery .heading{
+    padding-top: 0%;
+    padding-bottom: 4.5rem;
+    padding-right: 50%;
+    font-family: cursive;
+    text-shadow: #070707;
+  }
+  
+  .gallery-item {
+    flex: 1 1 calc(20% - 15px); /* Smaller size: 5 items per row */
+    max-width: calc(20% - 15px);
+    position: relative;
+    overflow: hidden;
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.review-box:hover {
-    background: rgba(250, 248, 248, 0.959);
-    transform: scale(1.05);
-}
-
-
-.review-box img {
-    height: 15rem;
-    width: 15rem;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
     object-fit: cover;
-    border-radius: 50%;
-}
-
-.review-box h3 {
-    color: #fff;
-    font-size: 2rem;
-    padding: 1rem 0;
-}
-
-.review-box h3:hover {
-    color: #0c0c0c;
-}
-
-.review-box h2 {
-    font-size: 2rem;
-    color: rgb(196, 121, 51);
-    padding: 1rem 0;
-}
-
-.review-box h2:hover {
-    color: #0c0c0c;
-}
-
-.review-box p {
-    font-size: 1.2rem;
-    color: #f3efef;
-    line-height: 1.6;
-    padding: 1rem 0;
-}
-
-.review-box p:hover {
-    color: #0e0d0d;
-}
-
-.review-box:hover h3,
-.review-box:hover h2,
-.review-box:hover p {
-    color: #000;
-    font-weight: bold; /* Change text color on hover */
-}
-
-@media (min-width: 1200px) {
-    .review-section {
-        padding: 4rem;
+    transition: transform 0.4s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.3); /* Adjusted shadow for glass effect */
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .gallery-item {
+      flex: 1 1 calc(25% - 15px); /* 4 items per row for large screens */
+      max-width: calc(25% - 15px);
     }
-    .review-container {
-        grid-template-columns: repeat(3, 1fr);
+  }
+  
+  @media (max-width: 992px) {
+    .gallery-item {
+      flex: 1 1 calc(33.33% - 15px); /* 3 items per row for medium screens */
+      max-width: calc(33.33% - 15px);
     }
-    .review-box {
-        padding: 5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .gallery-item {
+      flex: 1 1 calc(50% - 15px); /* 2 items per row for tablets */
+      max-width: calc(50% - 15px);
     }
-    .review-box img {
-        height: 15rem;
-        width: 15rem;
+  }
+  
+  @media (max-width: 576px) {
+    .gallery-item {
+      flex: 1 1 100%; /* 1 item per row for mobile screens */
+      max-width: 100%;
     }
-}
-
-/* Medium Screens (992px to 1199px) */
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    .review-section {
-        padding: 3rem;
-    }
-    .review-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .review-box {
-        padding: 4rem;
-    }
-    .review-box img {
-        height: 12rem;
-        width: 12rem;
-    }
-}
-
-/* Small Screens (768px to 991px) */
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .review-section {
-        padding: 2rem;
-    }
-    .review-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .review-box {
-        padding: 3rem;
-    }
-    .review-box img {
-        height: 10rem;
-        width: 10rem;
-    }
-}
-
-/* Extra Small Screens (576px to 767px) */
-
-@media (min-width: 576px) and (max-width: 767px) {
-    .review-section {
-        padding: 1 .5rem;
-    }
-    .review-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .review-box {
-        padding: 2rem;
-    }
-    .review-box img {
-        height: 8rem;
-        width: 8rem;
-    }
-}
-
+  }
+  
 
 .contact-section {
     justify-content: center;
@@ -1636,14 +1560,14 @@ section{
     padding: 2rem;
     width: 100%; 
     margin: 2rem auto; /* Added for consistency with review-section */
-    background: linear-gradient(rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.63)), url(/images/draft.JPG) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.63)), url(/images/draft4.JPG) no-repeat;
     background-size: cover;
     background-position: center;
     backdrop-filter: blur(12px);
     border-radius: 15px; /* Added for consistency with review-section */
     box-shadow: 0 25px 30px rgba(0, 0, 0, 0.973); /* Added for consistency with review-section */
     padding-top: 6rem;
-    padding-left: 9rem;
+    padding-left: 13%;
     padding-bottom: 5rem;
 
 }
@@ -1653,7 +1577,7 @@ section{
     flex-wrap: wrap;
     max-width: 1000px;
     width: 100%;
-    background: rgba(216, 113, 53, 0.2);
+    background: rgba(216, 113, 53, 0.137);
     backdrop-filter: blur(20px);
     border-radius: 15px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
